@@ -79,16 +79,25 @@ meta() %>%
 ```
 
 
+
+
+class: middle, center
+
+```{r hex, fig.align='center', echo = FALSE, out.width=150} 
+    knitr::include_graphics("img/hex.png")
+```
+
+
 ---
 class: inverse, middle, center
 
 
 
 
-Do you have your coffee? (if you like it) ☕ 
+ ☕ ?
 
 ### Starting in ...
-`r countdown(minutes = 5)`
+`r countdown(minutes = 3)`
 
 
 ---
@@ -107,8 +116,8 @@ class: bottom
 
 ## Lecture 1
 
-
 #### * Software used in MDS
+
 
 --
 
@@ -123,14 +132,14 @@ class: bottom
 
 ---
 
-## The MDS software stack
-
 class: middle
 
-### * Bash
-### * Git
-### * Python and R
-### * VS code, JupyterLab, and RStudio
+## The MDS software stack
+
+#### * Bash
+#### * Git
+#### * Python and R
+#### * VS code, JupyterLab, and RStudio
 
 ---
 
@@ -143,13 +152,34 @@ Anyone can read the source code and contribute to these projects
 
 ---
 
+
+
+## Open Source programs
+
+* Use the software without paying exorbitant amounts of money
+
+--
+* Having access to the source code 
+
+--
+* Open Source software is customizable and flexible
+
+--
+* It's becoming the standard in many tech companies
+
+--
+* You are part of an awesome and active community!
+
+
+---
+
 class: middle, center, inverse
 
 # Introduction to Computing
 
 ---
 
-```{r women, fig.align='center', echo = FALSE, out.width=700} 
+```{r women, fig.align='center', echo = FALSE, out.width=600} 
     knitr::include_graphics("img/computing.png")
 ```
 .footnote[Ester Gerston and Gloria Gordon (1946) U.S. Army/ARL Technical Library Archives] 
@@ -157,6 +187,23 @@ class: middle, center, inverse
 ---
 
 
+
+```{r 22, fig.align='center', echo = FALSE, out.width=600} 
+    knitr::include_graphics("img/computer.jpeg")
+```
+
+.footnote[[Photo by Pixabay from Pexels](https://www.pexels.com/photo/silver-imac-apple-magic-keyboard-and-magic-mouse-on-wooden-table-38568/)]
+
+
+---
+
+## Computer comunication
+
+```{r cym22, fig.align='center', echo = FALSE, out.width=700} 
+    knitr::include_graphics("img/computer-1.png")
+```
+
+---
 
 
 ## Computer comunication
@@ -176,11 +223,11 @@ class: middle, center, inverse
 
 ---
 
-```{r t1, fig.align='center', echo = FALSE, out.width=400} 
+```{r t1, fig.align='center', echo = FALSE, out.width=600} 
     knitr::include_graphics("img/win-terminals.png")
 ```
 
-```{r t2, fig.align='center', echo = FALSE, out.width=400} 
+```{r t2, fig.align='center', echo = FALSE, out.width=600} 
     knitr::include_graphics("img/mac-terminal.png")
 ```
 
@@ -190,14 +237,17 @@ class: middle, center, inverse
 
 ---
 
+class: middle, center
+
 ```{r cym, fig.align='center', echo = FALSE, out.width=700} 
     knitr::include_graphics("img/computer_and_machine.png")
 ```
 
 ---
 
+class: middle, center
 
-### Graphical User Interfaces are nice when you are new to something, but text based interfaces are actually faster and easier to use when you know what you are doing.
+#### Graphical User Interfaces are nice when you are new to something, but text based interfaces are actually faster and easier to use when you know what you are doing.
 
 ---
 
@@ -208,7 +258,9 @@ class: middle, center
 
 ---
 
-```{r cym, fig.align='center', echo = FALSE, out.width=600} 
+class: middle, center
+
+```{r bs1, fig.align='center', echo = FALSE, out.width=600} 
     knitr::include_graphics("img/bash.png")
 ```
 
@@ -220,6 +272,11 @@ class: middle, center
 
 # Navigation and manipulation the filesystem usign Bash
 
+
+Navigating the filesystem can be done via your visual operating system's user interface
+(e.g., Finder, Explorer, Nautilus, etc)
+or using a text-based shell such as Bash...
+
 ---
 
 
@@ -228,17 +285,135 @@ class: middle, center
 
 ---
 
+
+
 ## Some tips
 
 * press `TAB` to automatically complete commands and file names as you are typing.
 
+* you can type `man <your_command>` or `<your_command> --help`
+
+---
+
+## Relative and absolute path
+
+
+cd folder1
+
+cd /Users/Florencia/Documents/folder1
+
+
+
+
+---
+
+class: middle, center, inverse
+
+# Introduction to local and remote version control software
+
+.footnote[[Official Bash logo](https://github.com/odb/official-bash-logo)]
+
+---
+
+## Why version control?
+
+
+```{r bs, fig.align='center', echo = FALSE, out.width=600} 
+    knitr::include_graphics("img/phd.png")
+```
+
+.footnote[[“Piled Higher and Deeper” by Jorge Cham](http://www.phdcomics.com)]
+
+---
+
+
+## Github for MDS assignments
+
+There are 2 ways to start working with a repository 
+
+1. create a new one
+ 
+2. download an existing one
+
+---
+
+
+## Github for MDS assignments
+
+There are 2 ways to start working with a repository 
+
+ - create a new one
+ 
+### - download an existing one 
+
+**CLONING**
+
+
+---
+
+## Cloning repositories from Github
+
+* You can use GitHub to edit if you have minor changes
+
+* To be able to modify the code on your machine, we need to clone the repository
+
+---
+
+### Live coding
+How to clone a repository from GitHub
+`git clone`
+
+---
+
+## Changing and saving version controlled files
+Change files inside a Git repository
+`git add`
+`git commit`
+
+
+.footnote[[Software Carpentry](http://swcarpentry.github.io/git-novice/04-changes/)]
+---
+
+`git add .` add all updated and new files
+`git add file.txt` add a particular file
+--
+
+`git add --all` add all updated, new, and deleted files
+`git add -u` add all updated and deleted files
+
 ---
 
 
 
+
+
+`git commit`
+
+`-m` for short messages from the terminal
+
+
 ---
 
 
+## Push local changes to Github 
+
+Once you have committed, you changes are saved locally on your laptop. 
+To also upload them to GitHub, you need to "push" the changes to Github. 
+
+---
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[ 
+
+## Attribution
+
+* [Happy Git and GitHub for the useR](https://happygitwithr.com/) by Jenny Bryan and the STAT 545 TAs
+* Software Carpentry, specifically the Unix Shell and Git lessons
+
+                                                                                                                                      
+]
+
+
+---
 
 class: inverse, middle, center
 
