@@ -157,14 +157,6 @@ class: middle, center, inverse
 ---
 
 
-## Computer comunication
-
-```{r cym, fig.align='center', echo = FALSE, out.width=700} 
-    knitr::include_graphics("img/computer_and_machine.png")
-```
-
-
----
 
 
 ## Computer comunication
@@ -179,18 +171,20 @@ class: middle, center, inverse
 
 # Advantages of text-based shells
 
----
+* Facilitate human interaction with the computer
 
+
+---
 
 ```{r t1, fig.align='center', echo = FALSE, out.width=400} 
     knitr::include_graphics("img/win-terminals.png")
 ```
 
 ```{r t2, fig.align='center', echo = FALSE, out.width=400} 
-    knitr::include_graphics("img/mac-terminals.png")
+    knitr::include_graphics("img/mac-terminal.png")
 ```
 
-.footnote[[Command line crash course - MDS Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
+.footnote[[Command line crash course - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
 ] 
    
 
@@ -202,11 +196,49 @@ class: middle, center, inverse
 
 ---
 
+
+### Graphical User Interfaces are nice when you are new to something, but text based interfaces are actually faster and easier to use when you know what you are doing.
+
+---
+
 class: middle, center
 
 # B·A·S·H
+### the most commonly used text shell
 
 ---
+
+```{r cym, fig.align='center', echo = FALSE, out.width=600} 
+    knitr::include_graphics("img/bash.png")
+```
+
+
+.footnote[[Official Bash logo](https://github.com/odb/official-bash-logo)]
+
+
+---
+
+# Navigation and manipulation the filesystem usign Bash
+
+---
+
+
+## Live demo
+
+
+---
+
+## Some tips
+
+* press `TAB` to automatically complete commands and file names as you are typing.
+
+---
+
+
+
+---
+
+
 
 class: inverse, middle, center
 
